@@ -1,0 +1,10 @@
+osmnx==2.1.1
+networkx==3.7
+geopandas==1.2.0
+pandas==3.1.0
+numpy==2.5.4
+scipy==1.18.1
+PuLP==2.9.0
+folium==0.20.0
+matplotlib==3.11.2
+scikit-learn==1.9.1
