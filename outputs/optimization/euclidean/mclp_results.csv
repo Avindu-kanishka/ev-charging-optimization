@@ -1,0 +1,10 @@
+method,scenario,p,coverage_radius_km,solver_status,covered_demand_weight,total_demand_weight,coverage_percentage,covered_demand_nodes,total_demand_nodes,selected_facilities
+MCLP,"P=5, Radius=3km",5,3,Optimal,2158.0,2158.0,100.0,1237,1237,5
+MCLP,"P=5, Radius=5km",5,5,Optimal,2158.0,2158.0,100.0,1237,1237,5
+MCLP,"P=5, Radius=10km",5,10,Optimal,2158.0,2158.0,100.0,1237,1237,5
+MCLP,"P=10, Radius=3km",10,3,Optimal,2158.0,2158.0,100.0,1237,1237,10
+MCLP,"P=10, Radius=5km",10,5,Optimal,2158.0,2158.0,100.0,1237,1237,10
+MCLP,"P=10, Radius=10km",10,10,Optimal,2158.0,2158.0,100.0,1237,1237,10
+MCLP,"P=15, Radius=3km",15,3,Optimal,2158.0,2158.0,100.0,1237,1237,15
+MCLP,"P=15, Radius=5km",15,5,Optimal,2158.0,2158.0,100.0,1237,1237,15
+MCLP,"P=15, Radius=10km",15,10,Optimal,2158.0,2158.0,100.0,1237,1237,15

@@ -1,0 +1,13 @@
+method,scenario,p,solver_status,objective_weighted_distance,average_weighted_distance_km,assignable_demand_nodes,unassignable_demand_nodes,assignable_demand_weight,unassignable_demand_weight,selected_facilities,coverage_radius_km,covered_demand_weight,total_demand_weight,coverage_percentage,covered_demand_nodes,total_demand_nodes
+P-Median,P=5,5,Not Solved,2246.158280347892,1.0408518444614883,1237.0,0.0,2158.0,0.0,5,,,,,,
+P-Median,P=10,10,Optimal,2386.437862305595,1.1058562846643165,1237.0,0.0,2158.0,0.0,10,,,,,,
+P-Median,P=15,15,Optimal,1131.8308940488405,0.5244814152218908,1237.0,0.0,2158.0,0.0,15,,,,,,
+MCLP,"P=5, Radius=3km",5,Optimal,,,,,,,5,3.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=5, Radius=5km",5,Optimal,,,,,,,5,5.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=5, Radius=10km",5,Optimal,,,,,,,5,10.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=10, Radius=3km",10,Optimal,,,,,,,10,3.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=10, Radius=5km",10,Optimal,,,,,,,10,5.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=10, Radius=10km",10,Optimal,,,,,,,10,10.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=15, Radius=3km",15,Optimal,,,,,,,15,3.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=15, Radius=5km",15,Optimal,,,,,,,15,5.0,2158.0,2158.0,100.0,1237.0,1237.0
+MCLP,"P=15, Radius=10km",15,Optimal,,,,,,,15,10.0,2158.0,2158.0,100.0,1237.0,1237.0

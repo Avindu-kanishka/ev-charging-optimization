@@ -1,0 +1,18 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.env
+.env.*
+*.log
+*.tmp
+
+# Cache files
+cache/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
