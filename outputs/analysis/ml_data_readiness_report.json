@@ -1,0 +1,69 @@
+{
+    "project": "EV Charging Infrastructure Planning - Layer 2",
+    "audit": "ML dataset readiness",
+    "recommended_initial_target": "demand_weight",
+    "recommended_initial_dataset": "non_candidate_demand_nodes.csv",
+    "target_interpretation": "OSM-based spatial demand proxy, not actual EV charging demand",
+    "original_dataset": {
+        "nodes": 1237,
+        "total_proxy_weight": 2158,
+        "missing_values": 0,
+        "duplicate_node_ids": 0,
+        "demand_weight_equals_proxy_count": true
+    },
+    "filtered_dataset": {
+        "nodes": 1071,
+        "total_proxy_weight": 1775,
+        "missing_values": 0,
+        "duplicate_node_ids": 0,
+        "minimum_weight": 1,
+        "maximum_weight": 19,
+        "mean_weight": 1.6573295985060692,
+        "median_weight": 1.0,
+        "standard_deviation": 1.4303910852224497,
+        "weight_distribution": {
+            "1": 727,
+            "2": 192,
+            "3": 74,
+            "4": 33,
+            "5": 14,
+            "6": 14,
+            "7": 6,
+            "8": 5,
+            "9": 1,
+            "10": 1,
+            "12": 3,
+            "19": 1
+        }
+    },
+    "candidate_dataset": {
+        "candidate_locations": 294,
+        "duplicate_node_ids": 0,
+        "overlap_with_original_demand_nodes": 294
+    },
+    "road_graph": {
+        "nodes": 5453,
+        "edges": 11778,
+        "directed": true
+    },
+    "available_features": [
+        "longitude",
+        "latitude",
+        "mean_snap_distance_m",
+        "max_snap_distance_m",
+        "road node degree",
+        "street count",
+        "road network centrality",
+        "local road density"
+    ],
+    "feature_leakage_warning": "POI category counts contributing to the demand target must not be treated as independent predictors without a leakage assessment.",
+    "actual_ev_data": {
+        "identified": false,
+        "required_future_data": [
+            "charging session records",
+            "energy consumption",
+            "station utilization",
+            "timestamped charging demand"
+        ]
+    }
+}
