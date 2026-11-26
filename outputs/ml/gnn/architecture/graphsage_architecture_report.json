@@ -1,0 +1,123 @@
+{
+  "experiment": "GraphSAGE architecture ablation",
+  "evaluation": "Five-fold spatial cross-validation",
+  "threshold": 0.5,
+  "epochs": 120,
+  "device": "cpu",
+  "configurations": {
+    "Baseline_2L_32H": {
+      "layers": 2,
+      "hidden": 32,
+      "dropout": 0.3,
+      "lr": 0.01
+    },
+    "A_1L_32H": {
+      "layers": 1,
+      "hidden": 32,
+      "dropout": 0.3,
+      "lr": 0.01
+    },
+    "B_2L_64H": {
+      "layers": 2,
+      "hidden": 64,
+      "dropout": 0.3,
+      "lr": 0.01
+    },
+    "C_2L_Dropout50": {
+      "layers": 2,
+      "hidden": 32,
+      "dropout": 0.5,
+      "lr": 0.01
+    },
+    "D_2L_LR005": {
+      "layers": 2,
+      "hidden": 32,
+      "dropout": 0.3,
+      "lr": 0.005
+    }
+  },
+  "results": [
+    {
+      "configuration": "C_2L_Dropout50",
+      "layers": 2,
+      "hidden": 32,
+      "dropout": 0.5,
+      "lr": 0.01,
+      "epochs": 120,
+      "weight_decay": 0.0001,
+      "precision": 0.3557800224466891,
+      "recall": 0.5919701213818861,
+      "f1": 0.4444444444444444,
+      "roc_auc": 0.7174697354980332,
+      "average_precision": 0.4009451918198573,
+      "predicted_positive_nodes": 1782
+    },
+    {
+      "configuration": "A_1L_32H",
+      "layers": 1,
+      "hidden": 32,
+      "dropout": 0.3,
+      "lr": 0.01,
+      "epochs": 120,
+      "weight_decay": 0.0001,
+      "precision": 0.3438961038961039,
+      "recall": 0.6181139122315593,
+      "f1": 0.44192256341789055,
+      "roc_auc": 0.7219886889793191,
+      "average_precision": 0.4003805338723751,
+      "predicted_positive_nodes": 1925
+    },
+    {
+      "configuration": "D_2L_LR005",
+      "layers": 2,
+      "hidden": 32,
+      "dropout": 0.3,
+      "lr": 0.005,
+      "epochs": 120,
+      "weight_decay": 0.0001,
+      "precision": 0.3445835601524224,
+      "recall": 0.5910364145658263,
+      "f1": 0.43535075653370015,
+      "roc_auc": 0.7165098201154797,
+      "average_precision": 0.4003865802409122,
+      "predicted_positive_nodes": 1837
+    },
+    {
+      "configuration": "B_2L_64H",
+      "layers": 2,
+      "hidden": 64,
+      "dropout": 0.3,
+      "lr": 0.01,
+      "epochs": 120,
+      "weight_decay": 0.0001,
+      "precision": 0.35175282234105765,
+      "recall": 0.5527544351073763,
+      "f1": 0.429920116194626,
+      "roc_auc": 0.7060804087343138,
+      "average_precision": 0.37931372460831764,
+      "predicted_positive_nodes": 1683
+    },
+    {
+      "configuration": "Baseline_2L_32H",
+      "layers": 2,
+      "hidden": 32,
+      "dropout": 0.3,
+      "lr": 0.01,
+      "epochs": 120,
+      "weight_decay": 0.0001,
+      "precision": 0.3474477958236659,
+      "recall": 0.5592903828197946,
+      "f1": 0.4286225402504472,
+      "roc_auc": 0.700561800865181,
+      "average_precision": 0.3781546880703288,
+      "predicted_positive_nodes": 1724
+    }
+  ],
+  "best_configuration_by_f1": "C_2L_Dropout50",
+  "limitations": [
+    "Fixed 0.50 classification threshold.",
+    "One experiment per configuration with fixed random seeds.",
+    "No hyperparameter search beyond the listed configurations.",
+    "Target represents OSM activity proxy presence, not observed EV charging demand."
+  ]
+}
