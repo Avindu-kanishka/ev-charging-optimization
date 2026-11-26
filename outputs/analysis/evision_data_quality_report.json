@@ -1,0 +1,67 @@
+{
+  "graph": {
+    "type": "MultiDiGraph",
+    "nodes": 5453,
+    "edges": 11778,
+    "weakly_connected_components": 7
+  },
+  "demand": {
+    "rows": 1237,
+    "unique_node_ids": 1237,
+    "total_proxy_weight": 2158.0,
+    "duplicate_node_ids": 0,
+    "nodes_missing_from_graph": 0,
+    "nodes_missing_from_graph_sample": [],
+    "snap_over_100m": 104
+  },
+  "candidates": {
+    "rows": 294,
+    "unique_candidate_ids": 294,
+    "unique_road_nodes": 294,
+    "duplicate_candidate_ids": 0,
+    "road_nodes_missing_from_graph": 0,
+    "road_nodes_missing_from_graph_sample": [],
+    "snap_over_100m": 37
+  },
+  "distance_matrix": {
+    "shape": [
+      1237,
+      294
+    ],
+    "row_labels_match_demand_set": true,
+    "column_labels_match_candidate_id_set": true,
+    "rows_missing_from_demand": 0,
+    "demand_rows_missing_from_matrix": 0,
+    "columns_missing_from_candidates": 0,
+    "candidate_ids_missing_from_matrix": 0,
+    "reachable_pairs": 360331,
+    "unreachable_pairs": 3347,
+    "negative_finite_distances": 0,
+    "mean_reachable_distance_km": 4.304837354519972,
+    "median_reachable_distance_km": 3.9424481047526054
+  },
+  "candidate_demand_overlap": {
+    "shared_road_nodes": 294,
+    "shared_road_node_sample": [
+      "10035984128",
+      "10039819997",
+      "10039829415",
+      "10046476806",
+      "10046476808",
+      "10089844686",
+      "10112922276",
+      "10241732523",
+      "10268958228",
+      "10633327869"
+    ],
+    "warning": "Candidate and demand nodes overlap. Because candidate sites are selected from OSM activity features that may also contribute to demand proxies, coverage results may be optimistic and require a sensitivity analysis."
+  },
+  "checks": {
+    "demand_node_ids_unique": true,
+    "candidate_ids_unique": true,
+    "demand_nodes_exist_in_graph": true,
+    "candidate_nodes_exist_in_graph": true,
+    "distance_matrix_labels_aligned": true,
+    "no_negative_distances": true
+  }
+}

@@ -1,0 +1,10 @@
+scenario,p,coverage_radius_km,solver_status,covered_proxy_weight,total_proxy_weight,coverage_percentage,covered_demand_nodes,total_demand_nodes,selected_facilities,shared_candidate_demand_road_nodes
+non_candidate_poi_demand,5,3,Optimal,1773.0,1775.0,99.88732394366198,1069,1071,5,128
+non_candidate_poi_demand,5,5,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,5,128
+non_candidate_poi_demand,5,10,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,5,128
+non_candidate_poi_demand,10,3,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,10,128
+non_candidate_poi_demand,10,5,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,10,128
+non_candidate_poi_demand,10,10,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,10,128
+non_candidate_poi_demand,15,3,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,15,128
+non_candidate_poi_demand,15,5,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,15,128
+non_candidate_poi_demand,15,10,Optimal,1774.0,1775.0,99.94366197183099,1070,1071,15,128
