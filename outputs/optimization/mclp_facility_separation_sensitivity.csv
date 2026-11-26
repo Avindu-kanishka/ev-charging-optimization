@@ -1,0 +1,11 @@
+method,p,coverage_radius_km,minimum_separation_km,solver_status,separation_pair_constraints,covered_proxy_weight,total_proxy_weight,coverage_percentage,selected_facilities
+MCLP_minimum_separation_sensitivity,5,3.0,0.0,Optimal,0,1773.0,1775.0,99.88732394366198,5
+MCLP_minimum_separation_sensitivity,5,3.0,0.25,Optimal,385,1773.0,1775.0,99.88732394366198,5
+MCLP_minimum_separation_sensitivity,5,3.0,0.5,Optimal,1263,1773.0,1775.0,99.88732394366198,5
+MCLP_minimum_separation_sensitivity,5,3.0,1.0,Optimal,4063,1773.0,1775.0,99.88732394366198,5
+MCLP_minimum_separation_sensitivity,5,3.0,1.5,Optimal,7879,1773.0,1775.0,99.88732394366198,5
+MCLP_minimum_separation_sensitivity,10,3.0,0.0,Optimal,0,1774.0,1775.0,99.94366197183099,10
+MCLP_minimum_separation_sensitivity,10,3.0,0.25,Optimal,385,1774.0,1775.0,99.94366197183099,10
+MCLP_minimum_separation_sensitivity,10,3.0,0.5,Optimal,1263,1774.0,1775.0,99.94366197183099,10
+MCLP_minimum_separation_sensitivity,10,3.0,1.0,Optimal,4063,1774.0,1775.0,99.94366197183099,10
+MCLP_minimum_separation_sensitivity,10,3.0,1.5,Optimal,7879,1774.0,1775.0,99.94366197183099,10
