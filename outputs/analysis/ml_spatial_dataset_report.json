@@ -1,0 +1,41 @@
+{
+    "dataset": "data\\processed\\ml\\spatial_demand_proxy_dataset.csv",
+    "graph_nodes": 5453,
+    "graph_edges": 11778,
+    "dataset_rows": 5453,
+    "positive_demand_nodes": 1071,
+    "zero_demand_nodes": 4382,
+    "total_demand_proxy_count": 1775,
+    "target_column": "demand_proxy_count",
+    "predictor_count": 21,
+    "constant_features_removed": [
+        "road_service_count"
+    ],
+    "predictor_columns": [
+        "longitude",
+        "latitude",
+        "street_count",
+        "in_degree",
+        "out_degree",
+        "incident_edge_count",
+        "incident_road_length_sum_m",
+        "incident_road_length_mean_m",
+        "incident_road_length_max_m",
+        "road_motorway_count",
+        "road_trunk_count",
+        "road_primary_count",
+        "road_secondary_count",
+        "road_tertiary_count",
+        "road_residential_count",
+        "road_unclassified_count",
+        "road_living_street_count",
+        "road_other_count",
+        "degree",
+        "local_node_count_250m",
+        "local_node_count_500m"
+    ],
+    "missing_values": 0,
+    "duplicate_node_ids": 0,
+    "target_leakage_check": "PASSED",
+    "actual_ev_demand": false
+}
