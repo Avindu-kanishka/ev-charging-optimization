@@ -1,0 +1,116 @@
+{
+  "experiment": "Nested spatial threshold optimization for GraphSAGE",
+  "task": "Binary OSM demand-proxy presence classification",
+  "outer_validation": "Five-fold spatial CV",
+  "inner_validation": "Four-fold spatial CV within each outer training set",
+  "threshold_candidates": [
+    0.1,
+    0.125,
+    0.15,
+    0.175,
+    0.2,
+    0.225,
+    0.25,
+    0.275,
+    0.3,
+    0.325,
+    0.35,
+    0.375,
+    0.4,
+    0.425,
+    0.45,
+    0.475,
+    0.5,
+    0.525,
+    0.55,
+    0.575,
+    0.6,
+    0.625,
+    0.65,
+    0.675,
+    0.7,
+    0.725,
+    0.75,
+    0.775,
+    0.8,
+    0.825,
+    0.85,
+    0.875,
+    0.9
+  ],
+  "threshold_selection": "Maximum inner OOF F1; higher threshold breaks ties",
+  "model": {
+    "architecture": "Two-layer GraphSAGE",
+    "hidden_dimension": 32,
+    "dropout": 0.3,
+    "epochs": 120,
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "device": "cpu"
+  },
+  "fixed_threshold_overall_oof": {
+    "precision": 0.32926152137701276,
+    "recall": 0.5536881419234361,
+    "f1": 0.4129526462395543,
+    "roc_auc": 0.6895592102655759,
+    "average_precision": 0.36720543283002804,
+    "predicted_positive_nodes": 1801,
+    "actual_positive_nodes": 1071
+  },
+  "nested_threshold_overall_oof": {
+    "precision": 0.3186646433990895,
+    "recall": 0.5882352941176471,
+    "f1": 0.41338582677165353,
+    "roc_auc": 0.6895592102655759,
+    "average_precision": 0.36720543283002804,
+    "predicted_positive_nodes": 1977,
+    "actual_positive_nodes": 1071
+  },
+  "mean_outer_fold_f1": {
+    "fixed": 0.4106348720390042,
+    "nested": 0.41190851939549067
+  },
+  "selected_thresholds": [
+    {
+      "outer_fold": 0,
+      "threshold": 0.475,
+      "f1": 0.4154250657318142,
+      "precision": 0.33100558659217877,
+      "recall": 0.5576470588235294
+    },
+    {
+      "outer_fold": 1,
+      "threshold": 0.5,
+      "f1": 0.4357048166151127,
+      "precision": 0.35365853658536583,
+      "recall": 0.567318757192175
+    },
+    {
+      "outer_fold": 2,
+      "threshold": 0.4,
+      "f1": 0.4292168674698795,
+      "precision": 0.31790295593976575,
+      "recall": 0.660486674391657
+    },
+    {
+      "outer_fold": 3,
+      "threshold": 0.475,
+      "f1": 0.419327731092437,
+      "precision": 0.33266666666666667,
+      "recall": 0.5670454545454545
+    },
+    {
+      "outer_fold": 4,
+      "threshold": 0.475,
+      "f1": 0.40262008733624455,
+      "precision": 0.3140326975476839,
+      "recall": 0.5608272506082725
+    }
+  ],
+  "limitations": [
+    "Thresholds are selected using inner spatial validation only.",
+    "Outer test folds are not used for threshold selection.",
+    "The target is OSM activity proxy presence, not observed EV charging demand.",
+    "This experiment does not establish external geographic transfer."
+  ]
+}
