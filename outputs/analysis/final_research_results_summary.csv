@@ -1,0 +1,11 @@
+configuration,metric,value
+Combined-quality P=10,Coverage within 3 km (%),99.88732394366198
+Combined-quality P=10,Weighted mean distance (km),1.2819456263636582
+Combined-quality P=10,Weighted P90 distance (km),2.005002176691523
+Combined-quality P=10,Proxy weight beyond 1 km (%),67.26760563380282
+Combined-quality P=10,Proxy weight beyond 2 km (%),10.19718309859155
+Combined-quality P=10,Unreachable demand nodes,2.0
+Baseline P=10,Weighted mean distance (km),1.4505192650434973
+Baseline P=10,Weighted P90 distance (km),2.212548799289732
+Baseline P=10,Proxy weight beyond 2 km (%),20.338028169014084
+Baseline P=10,Unreachable demand nodes,1.0
