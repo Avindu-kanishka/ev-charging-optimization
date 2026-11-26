@@ -1,0 +1,43 @@
+{
+  "nodes": 5453,
+  "features": 21,
+  "feature_names": [
+    "longitude",
+    "latitude",
+    "street_count",
+    "in_degree",
+    "out_degree",
+    "incident_edge_count",
+    "incident_road_length_sum_m",
+    "incident_road_length_mean_m",
+    "incident_road_length_max_m",
+    "road_motorway_count",
+    "road_trunk_count",
+    "road_primary_count",
+    "road_secondary_count",
+    "road_tertiary_count",
+    "road_residential_count",
+    "road_unclassified_count",
+    "road_living_street_count",
+    "road_other_count",
+    "degree",
+    "local_node_count_250m",
+    "local_node_count_500m"
+  ],
+  "target_name": "demand_proxy_count",
+  "target_positive_nodes": 1071,
+  "target_zero_nodes": 4382,
+  "target_total": 1775.0,
+  "undirected_road_edges": 6967,
+  "bidirectional_adjacency_edges": 13934,
+  "spatial_fold_distribution": {
+    "0": 1091,
+    "1": 1091,
+    "2": 1091,
+    "3": 1090,
+    "4": 1090
+  },
+  "feature_missing_values": 0,
+  "feature_infinite_values": 0,
+  "validation": "passed"
+}
