@@ -1,0 +1,11 @@
+experiment,fold,predictor_count,roc_auc
+Full Features,0,21,0.7097675144328288
+Full Features,1,21,0.7180500952232456
+Full Features,2,21,0.7189623442808608
+Full Features,3,21,0.7464897005981049
+Full Features,4,21,0.7418281926755775
+Road Network Only,0,19,0.6625604618505228
+Road Network Only,1,19,0.6820685161879518
+Road Network Only,2,19,0.6703436710514854
+Road Network Only,3,19,0.6930795706689806
+Road Network Only,4,19,0.6761600504276322
