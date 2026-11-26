@@ -1,0 +1,11 @@
+scenario,p,coverage_radius_km,minimum_separation_km,solver_status,covered_proxy_weight,coverage_percentage,selected_facilities
+candidate_quality_filtered,5,3.0,0.0,Optimal,1773.0,99.88732394366198,5
+candidate_quality_filtered,5,3.0,0.25,Optimal,1773.0,99.88732394366198,5
+candidate_quality_filtered,5,3.0,0.5,Optimal,1773.0,99.88732394366198,5
+candidate_quality_filtered,5,3.0,1.0,Optimal,1773.0,99.88732394366198,5
+candidate_quality_filtered,5,3.0,1.5,Optimal,1773.0,99.88732394366198,5
+candidate_quality_filtered,10,3.0,0.0,Optimal,1773.0,99.88732394366198,10
+candidate_quality_filtered,10,3.0,0.25,Optimal,1773.0,99.88732394366198,10
+candidate_quality_filtered,10,3.0,0.5,Optimal,1773.0,99.88732394366198,10
+candidate_quality_filtered,10,3.0,1.0,Optimal,1773.0,99.88732394366198,10
+candidate_quality_filtered,10,3.0,1.5,Optimal,1773.0,99.88732394366198,10
