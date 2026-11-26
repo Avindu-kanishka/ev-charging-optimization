@@ -1,0 +1,9 @@
+facility_selection,distance_metric,facility_count,weighted_distance_objective,average_weighted_distance_km,reachable_demand_nodes,unreachable_demand_nodes,reachable_demand_weight,total_demand_nodes,total_demand_weight
+Road model selected,Road network,10,2147.630678780899,0.9956563183963371,1236,1,2157.0,1237,2158.0
+Road model selected,Euclidean,10,1520.3993772229605,0.7045409533007232,1237,0,2158.0,1237,2158.0
+Original Euclidean selected,Road network,10,3485.471712809916,1.6173882658050653,1234,3,2155.0,1237,2158.0
+Original Euclidean selected,Euclidean,10,2386.4378623055936,1.1058562846643158,1237,0,2158.0,1237,2158.0
+Diagnostic Euclidean selected,Road network,10,2647.144625859348,1.228373376268839,1234,3,2155.0,1237,2158.0
+Diagnostic Euclidean selected,Euclidean,10,1816.3696689586054,0.8416912275063047,1237,0,2158.0,1237,2158.0
+Best-known feasible Euclidean,Road network,10,2147.630678780899,0.9956563183963371,1236,1,2157.0,1237,2158.0
+Best-known feasible Euclidean,Euclidean,10,1520.3993772229605,0.7045409533007232,1237,0,2158.0,1237,2158.0
