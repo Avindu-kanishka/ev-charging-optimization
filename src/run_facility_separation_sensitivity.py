@@ -13,7 +13,7 @@ DISTANCE_PATH = PROJECT_ROOT / "data/processed/distance/non_candidate_demand_can
 OUTPUT_DIR = PROJECT_ROOT / "outputs/optimization"
 
 # Exploratory assumptions, not statutory or planning standards.
-SEPARATION_THRESHOLDS_KM = [0.0, 0.25, 0.5, 1.0]
+SEPARATION_THRESHOLDS_KM = [0.0, 0.25, 0.5, 1.0, 1.5]
 P_VALUES = [5, 10]
 COVERAGE_RADIUS_KM = 3.0
 TIME_LIMIT_SECONDS = 180
