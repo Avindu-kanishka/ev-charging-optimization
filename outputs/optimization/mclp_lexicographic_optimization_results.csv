@@ -1,0 +1,5 @@
+scenario,p,eligible_candidates,coverage_radius_km,minimum_separation_km,stage1_status,stage2_status,covered_proxy_weight,total_proxy_weight,coverage_percentage,total_selected_mean_snap_distance_m,selected_facilities
+baseline,5,294,3.0,0.5,Optimal,Optimal,1773.0,1775.0,99.88732394366198,211.70227254196385,5
+baseline,10,294,3.0,0.5,Optimal,Optimal,1774.0,1775.0,99.94366197183099,190.4940201579343,10
+combined_quality,5,256,3.0,0.5,Optimal,Optimal,1773.0,1775.0,99.88732394366198,211.70227254196385,5
+combined_quality,10,256,3.0,0.5,Optimal,Optimal,1773.0,1775.0,99.88732394366198,125.16672347330112,10

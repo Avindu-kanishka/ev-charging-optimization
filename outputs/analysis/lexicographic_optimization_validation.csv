@@ -1,0 +1,5 @@
+scenario,p,selected_count,reported_stage1_coverage,recalculated_stage2_coverage,actual_coverage_percentage,minimum_separation_km,actual_total_mean_snap_distance_m,coverage_check,separation_check,quality_check,validation
+baseline,5,5,1773.0,1773.0,99.88732394366198,2.6782931734913453,211.70227254196385,True,True,True,PASS
+baseline,10,10,1774.0,1774.0,99.94366197183099,0.7507601513365204,190.4940201579343,True,True,True,PASS
+combined_quality,5,5,1773.0,1773.0,99.88732394366198,2.6782931734913453,211.70227254196385,True,True,True,PASS
+combined_quality,10,10,1773.0,1773.0,99.88732394366198,0.7978448459668465,125.1667234733011,True,True,True,PASS
