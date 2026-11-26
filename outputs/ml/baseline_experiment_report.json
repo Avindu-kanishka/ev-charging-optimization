@@ -1,0 +1,42 @@
+{
+    "experiment": "Spatial ML baseline regression",
+    "target": "demand_proxy_count",
+    "target_interpretation": "OSM-based urban-activity demand proxy, not measured EV demand",
+    "rows": 5453,
+    "predictor_count": 21,
+    "spatial_folds": 5,
+    "validation_method": "5-fold GroupKFold using 500m spatial blocks",
+    "models": [
+        {
+            "model": "Zero Baseline",
+            "MAE": 0.3255088941866862,
+            "RMSE": 0.9700257397693876,
+            "R2": -0.1268943889893952
+        },
+        {
+            "model": "HistGradientBoosting",
+            "MAE": 0.4378490135597268,
+            "RMSE": 0.8394433612450659,
+            "R2": 0.156083463083575
+        },
+        {
+            "model": "Extra Trees",
+            "MAE": 0.4486772032170784,
+            "RMSE": 0.8405813339670634,
+            "R2": 0.15379383882948072
+        },
+        {
+            "model": "Random Forest",
+            "MAE": 0.45507118736552077,
+            "RMSE": 0.8266054334270261,
+            "R2": 0.1816987571348423
+        },
+        {
+            "model": "Training Mean Baseline",
+            "MAE": 0.523742297714124,
+            "RMSE": 0.9151283452865286,
+            "R2": -0.002953306292759361
+        }
+    ],
+    "runtime_seconds": 24.76
+}
